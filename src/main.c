@@ -1,11 +1,7 @@
 #include <stdio.h>
-#include <ncurses.h>
+#include "lib/ncomponent/ncomponent.h"
 
 int main(){
-    initscr();
-    printw("Hello World");
-    refresh();
-    getch();
-    endwin();      
+    ComponentID cid = component_id_new();
     return 0;
 }
